@@ -5,6 +5,6 @@ def dice():
     print(f"dice:{a} {b}")
     if a == b:
         print("Fantastic!! You can move three times")
-        return a
+        return [a, a, a]
     else:
         return [a, b]
