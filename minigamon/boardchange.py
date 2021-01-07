@@ -1,4 +1,10 @@
 def boardchange(board, t, n: int, a: int):
+    """
+    >>> boardchange([0, 2, 2, 2, 2, -2, -2, -2, -2, 0], 1, 3, 1)
+    [0, 2, 2, 1, 3, -2, -2, -2, -2, 0]
+    >>> boardchange([0, -8, 0, 0, 3, 2, 1, 0], 1, 4, 4)
+    [0, -8, 0, 0, 2, 2, 2, 0]
+    """
     l = len(board)-2
     if t == 1:
         board[n] -= 1
