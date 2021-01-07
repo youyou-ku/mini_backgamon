@@ -9,13 +9,23 @@ def boardchange(board, t, n: int, a: int):
     if t == 1:
         board[n] -= 1
         if n + a <= l:
-            board[n+a] += 1
+            p = n + a
         else:
-            board[-2] += 1
+            p = -2
+        if board[p] == -1:
+            board[-1] -= 1
+            board[p] = 1
+        elif board[p] >= 0:
+            board[p] += 1
     elif t == -1:
         board[-1-n] += 1
         if n + a <= l:
-            board[-1-n-a] -= 1
+            p = -1-n-a
         else:
-            board[1] -= 1
+            p = 1
+        if board[p] == 1:
+            board[0] += 1
+            board[p] = 1
+        elif board[p] <= 0:
+            board[p] -= 1
     return board
