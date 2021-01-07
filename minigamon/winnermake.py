@@ -8,13 +8,13 @@ def winnercheck(board, n, t):
     True
     """
     if t == 1:
-        p = [board[-2-i] for i in range(3) if board[-2-i] > 0]
-        for i in p:
-            n -= p[i]
+        for i in range(3):
+            if board[-2-i] > 0:
+                n -= board[-2-i]
     elif t == -1:
-        p = [board[1+i] for i in range(3) if board[1+i] < 0]
-        for i in p:
-            n += p[i]
+        for i in range(3):
+            if board[1+i] < 0:
+                n += board[1+i]
     if n == 0:
         return True
     else:
