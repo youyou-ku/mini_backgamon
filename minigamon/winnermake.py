@@ -1,4 +1,4 @@
-def winnercheck(board, n, t):
+def winnercheck(board, n: int, t: int):
     """
     >>> winnercheck([0, -3, -4, -1, 0, 0, 2, 0, 3, 3, 0, 0, 0, 0, 0, 0, 0], 8, -1)
     True
