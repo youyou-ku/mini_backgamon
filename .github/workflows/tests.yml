@@ -14,6 +14,9 @@ jobs:
     - name: unittest
       run: |
         python3 -m unittest discover -v
-    - name: doctest
+    - name: doctest-boardchange
       run: |
-        python3 -m doctest -v minigamon/*.py
+        python3 -m doctest -v minigamon/boardchange.py
+    - name: doctest-winnercheck
+        run: |
+          python3 -m doctest -v minigamon/winnermake.py
