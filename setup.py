@@ -5,7 +5,7 @@ setup(
     version="0.0.1",
     description='Mini Back Gamon Program.',
     author='youyou-ku',
-    url='https://github.com/youyou-ku/mini_backgamon',
+    url='https://github.com/youyou-ku/mini_backgamon.git',
     author_email='murata.yu.86r@st.kyoto-u.ac.jp',
     license='MIT',
     install_requires=[],
