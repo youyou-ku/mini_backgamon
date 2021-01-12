@@ -6,7 +6,7 @@ setup(
     description='Mini Back Gamon Program.',
     author='youyou-ku',
     url='https://github.com/youyou-ku/mini_backgamon.git',
-    author_email='youyou5016ku@gmail.com',
+    author_email='murata.yu.86r@st.kyoto-u.ac.jp',
     install_requires=["random"],
     packages=find_packages(exclude=["tests"]),
     classifiers=[
