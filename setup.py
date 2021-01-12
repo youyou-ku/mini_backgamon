@@ -7,8 +7,7 @@ setup(
     author='youyou-ku',
     url='https://github.com/youyou-ku/mini_backgamon.git',
     author_email='youyou5016ku@gmail.com',
-    license='MIT',
-    install_requires=[],
+    install_requires=["random"],
     packages=find_packages(exclude=["tests"]),
     classifiers=[
         "Programming Language :: Python :: 3.8",
